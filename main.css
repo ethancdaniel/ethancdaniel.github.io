@@ -1,20 +1,55 @@
+main {
+	margin: 0 auto;
+	max-width: 80em;
+}
+
 header {
 	display: inline-block;
-	background-color: gray;
-	margin: 0 auto;
-	width: 80%;
+	
+	width: 100%;
+	margin: 0;
 }
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 nav {
 	display: inline-block;
 }
+
 ol li {
 	display: inline-block;
+}
+
+ul li {
+	display: inline-block;
+}
+
+.work-description {
+	display: none;
+}
+
+.work-item {
+	display: block;
 }
 
 #nav-logo {
 	float: left;
 }
 
-#links {
+#projects-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}
+
+#redirects {
 	float: right;
+}
+
+div[tabIndex="0"] {
+	display: block;
 }

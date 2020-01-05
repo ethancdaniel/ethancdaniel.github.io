@@ -1,48 +1,158 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>This is a webpage!</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-</head>
+	<head>
+		<title>This is a webpage!</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="https://kit.fontawesome.com/f1a00d1eda.js" crossorigin="anonymous"></script>
+	</head>
 
-<body>
-	<header>
-		<a href="/" aria-label="home" id="nav-logo">Ethan Daniel</a>
-		<div id="links">
-			<nav>
-				<ol>
-					<li>About</li>
-					<li>Experience</li>
-					<li>Projects</li>
-					<li>Contact</li>
-				</ol>
-			</nav>
-			<a href="/Resume_Ethan_Daniel.pdf" aria-label="resume" id="nav-resume">Resume</a>
-		</div>
-	</header>
-	<main>
-		<section id="landing">
-			<h6>Hi, I'm</h6>
-			<h1>Ethan Daniel.</h1>
-			<a href="mailto:ethandaniel@berkeley.edu">Get in touch</a>
-		</section>
+	<body>
+		<header>
+			<a href="/" aria-label="home" id="nav-logo">Ethan Daniel</a>
+			<div id="redirects">
+				<nav>
+					<ul>
+						<li>About</li>
+						<li>Experience</li>
+						<li>Projects</li>
+						<li>Contact</li>
+					</ul>
+				</nav>
+				<a href="/Resume_Ethan_Daniel.pdf" aria-label="resume" id="nav-resume">Resume</a>
+			</div>
+		</header>
+		<main>
+			<section id="landing">
+				<h6>Hi, I'm</h6>
+				<h1>Ethan Daniel.</h1>
+				<div id="contact-buttons">
+					<a href="mailto:ethandaniel@berkeley.edu"><i class="fas fa-envelope"></i></a>
+					<a href="https://www.facebook.com/ethancdaniel"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.linkedin.com/in/ethancdaniel/"><i class="fab fa-linkedin-in"></i></a>
+					<a href="http://github.com/ethancdaniel"><i class="fab fa-github"></i></a>
+				</div>
+			</section>
 
-		<section id="about">
-			<h2>About</h2>
-			<p>I'm a sophomore studying Computer Science at University of California, Berkeley currently seeking summer 2020 software engineering internships.</p>
-		</section>
+			<section id="about">
+				<h2>About</h2>
+				<p>Hello! I'm Ethan, a Healdsburg native, and a sophomore studying Computer Science at <a href="https://www.berkeley.edu/">University of California, Berkeley.</a> Last year, I interned at Vytality Health on the Android and iOS development teams. In the summer, I also interned at SMount Tech on the Android team.
 
-		<section id="experience">
-			
-		</section>
+				I'm currently most comfortable with mobile app development (iOS/Android) and back-end web development and am looking to expand on my skillset through side projects, classes, and internships.</p>
+			</section>
 
-		<section id="projects">
+			<section id="experience">
+				<h2>Experience</h2>
+				<ul>
+					<li><button class="work-btn" id="work-experience-0" tabIndex="0" onclick="toggleButtons(this.tabIndex)">SMount Tech</button></li>
+					<li><button class="work-btn" id="work-experience-1" tabIndex="1" onclick="toggleButtons(this.tabIndex)">Vytality Health</button></li>
+					<li><button class="work-btn" id="work-experience-2" tabIndex="2" onclick="toggleButtons(this.tabIndex)">The Third Workshop</button></li>
+					<li><button class="work-btn" id="work-experience-3" tabIndex="3" onclick="toggleButtons(this.tabIndex)">City of Healdsburg</button></li>
 
-		</section>
+				</ul>
+				<div class="work-description" tabIndex="0">
+					<h3>Android Developer @ SMount Tech</h3>
+					<h5>Jun 2019 - Sep 2019</h5>
+					<ul>
+						<li class="work-item">Worked on the Android development team to create a unctional app prototype</li>
+						<li class="work-item">Utilized RabbitMQ to send messages to other users on a peer-to-peer network</li>
+					</ul>
+				</div>
+				<div class="work-description" tabIndex="1">
+					<h3>Software Engineering Intern @ <a href="https://vytality.co/">Vytality Health</a></h3>
+					<h5>Dec 2018 - Sep 2019</h5>
+					<ul>
+						<li class="work-item">Developed iOS and Android Versions of an app for a Y Combinator startup</li>
+						<li class="work-item">Rapidly prototyped different iterations of the app using Agile development</li>
+						<li class="work-item">Implemented core functionality for an Instagram-like social feed</li>
+					</ul>
+				</div>
+				<div class="work-description" tabIndex="2">
+					<h3>Programming Mentor @ <a href="thirdworkshop.com">The Third Workshop</a></h3>
+					<h5>Dec 2018 - Sep 2019</h5>
+					<ul>
+						<li class="work-item">Mentored children of all ages in programming</li>
+						<li class="work-item">Taught students the fundamentals of programming using tools such as Snap and Codecademy</li>
+						<li class="work-item">Provided IT services such as building PCs</li>
+					</ul>
+				</div>
+				<div class="work-description" tabIndex="3">
+					<h3>Coding Camp Instructor @ <a href="https://www.ci.healdsburg.ca.us/">City of Healdsburg</a></h3>
+					<h5>Dec 2018 - Sep 2019</h5>
+					<ul>
+						<li class="work-item">Created a curriculum to teach students the basics of Java in a week-long course</li>
+						<li class="work-item">Provided additional resoruces for students to further their programming skills after the coding camp</li>
+					</ul>
+				</div>
+			</section>
 
-		<section id="contact">
-			
-		</section>
-	</main>
-	
+			<section id="projects">
+				<h2>Projects</h2>
+				<div id="projects-wrapper">
+					<div>
+						<h3>NetGuard</h3>
+						<p>IoT security tool used to protect against DDoS attacks by closing all ports on the device, uploading attack information to an Azure database, and sending a private SSH key to the device owner to reconfigure the device. "Best Use of Docker" Finalist, presented at DockerCon 2019. </p>
+						<ul>
+							<li>Python</li>
+							<li>SQL</li>
+							<li>Docker</li>
+							<li>Azure</li>
+						</ul>
+					</div>
+					<div>
+						<h3>The Hound's Bark</h3>
+						<p>News publishing website for the Healdsburg High School journalism class. Uses date and submitted information to categorize articles in the database and generate unique URLs for each article. Not currently in use.</p>
+						<ul>
+							<li>Python</li>
+							<li>Flask</li>
+							<li>SQL</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Bootstrap</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Sonoma County Bike Coalition</h3>
+						<p>Android app that scrapes and displays news articles from the <a href="https://www.bikesonoma.org/">SCBC website</a>. Feature to display map markers for cycling-related points of interest in progress.</p>
+						<ul>
+							<li>Android</li>
+							<li>Java</li>
+							<li>XML</li>
+							<li>Python</li>
+							<li>Flask</li>
+							<li>HTML</li>
+							<li>CSS</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Workout Generator</h3>
+						<p>Project for my iOS DeCal class at UC Berkeley to randomly generate workouts based on user-selected muscle groups.</p>
+						<ul>
+							<li>iOS</li>
+							<li>Swift</li>
+						</ul>
+					</div>
+					<div>
+						<h3>Drip</h3>
+						<p>Reservoir tracker for California. Scrapes reservoir level data from the <a href="https://cdec.water.ca.gov/">CDEC</a> and graphs reservoir levels over a selected time period. Congressional App Challenge Finalist 2016</p>
+						<ul>
+							<li>Android</li>
+							<li>Java</li>
+							<li>XML</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<h1>Contact</h1>
+				<p>I'm currently looking for summer 2020 internship opportunities. Whether you'd like to work on a project together or contact me about a professional opportunity, I will do my best to answer your email!</p>
+				<a href="mailto:ethandaniel@berkeley.edu">Get In Touch</a>
+			</section>
+
+			<footer>
+				<p>Designed & Built by Ethan Daniel</p>
+			</footer>
+		</main>
+		<script src="main.js"></script>
+	</body>
 </html>
