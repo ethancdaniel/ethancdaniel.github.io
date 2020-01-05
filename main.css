@@ -1,0 +1,20 @@
+header {
+	display: inline-block;
+	background-color: gray;
+	margin: 0 auto;
+	width: 80%;
+}
+nav {
+	display: inline-block;
+}
+ol li {
+	display: inline-block;
+}
+
+#nav-logo {
+	float: left;
+}
+
+#links {
+	float: right;
+}
