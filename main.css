@@ -2,18 +2,22 @@
 	margin: 0;
 	font-size: 100%;
 	font-family: 'Open Sans';
-	background: transparent;
-	outline: 0;
 	padding: 0;
-	vertical-align: baseline;
+	box-sizing: border-box;
+	color: #DDDBF1
+}
+
+body {
+	background-color: #1C1D21;
 }
 
 button {
 	font-family: 'Roboto Mono', monospace;
 }
+
 main {
 	margin: 0 auto;
-	max-width: 80em;
+	max-width: 70em;
 }
 
 h1 {
@@ -26,11 +30,8 @@ h2 {
 
 h6 {
 	font-family: 'Roboto Mono', monospace;
-}
-header {
-	display: inline-block;
-	
-	width: 100%;
+	color: #0CAADC;
+	margin-left: 5px;
 }
 
 footer p {
@@ -41,19 +42,36 @@ footer p {
 }
 
 nav {
-	display: inline-block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 35px;
+}
+
+nav ul {
+	list-style: none;
 }
 
 ol li {
 	display: inline-block;
 }
 
-p {
-}
-
 ul li {
 	display: inline-block;
 	font-family: 'Roboto Mono', monospace;
+}
+
+.media-btn {
+	padding: 10px 10px;
+	margin: 0px 15px 0px 5px;
+	border: 2px;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: #0CAADC;
+}
+
+.nav-link {
+	margin: 0px 15px; 
 }
 
 .work-description {
@@ -64,9 +82,20 @@ ul li {
 	display: block;
 }
 
+#landing {
+	margin: 450px 0px 700px 0px;
+	justify-content: center;
+}
+
 #logo {
-	float: left;
-	font-size: 1.7em;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+#media-btns {
+	margin: 30px 0px;
+	font-size: 2rem;
 }
 
 #projects-wrapper {
@@ -75,12 +104,9 @@ ul li {
 	grid-gap: 10px;
 }
 
-#redirects {
-	float: right;
-}
-
 #resume-link {
 	font-family: 'Roboto Mono', monospace;
+	text-decoration: none;
 }
 
 div[tabIndex="0"] {
