@@ -7,17 +7,17 @@
 	color: #DDDBF1
 }
 
+a {
+	color: #0CAADC;
+}
+
 body {
 	background-color: #1C1D21;
 }
 
-button {
-	font-family: 'Roboto Mono', monospace;
-}
-
 main {
 	margin: 0 auto;
-	max-width: 70em;
+	max-width: 50em;
 }
 
 h1 {
@@ -25,12 +25,14 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1.6em;
+	margin: 30px 0px;
 }
 
 h6 {
 	font-family: 'Roboto Mono', monospace;
 	color: #0CAADC;
+	font-size: 1.3em;
 	margin-left: 5px;
 }
 
@@ -52,13 +54,56 @@ nav ul {
 	list-style: none;
 }
 
+div .animation {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4px;
+	width: 25%;
+	z-index: 1;
+	background-color: red;
+}
+
+div .animation-background {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4px;
+	width: 100%;
+	z-index: 0;
+	background-color: #696969;
+	opacity: 50%;
+}
+
 ol li {
 	display: inline-block;
 }
 
+p {
+	opacity: 60%;
+	line-height: 2em;
+}
+
+section {
+	margin-top: 200px;
+}
+
+span {
+	color: #0CAADC;
+}
 ul li {
 	display: inline-block;
 	font-family: 'Roboto Mono', monospace;
+	margin: 10px 0px;
+}
+
+ul li a {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 15px;
+	color: #0CAADC;
+	background-color: transparent;
+	margin: 10px;
+	padding: 10px 0px;
 }
 
 .media-btn {
@@ -74,8 +119,23 @@ ul li {
 	margin: 0px 15px; 
 }
 
+.tabs-container {
+	position: relative;
+	width: 100%;
+}
+
+.tabs-list {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
 .work-description {
 	display: none;
+}
+
+.work-li {
+	width: 25%;
 }
 
 .work-item {
@@ -107,6 +167,7 @@ ul li {
 #resume-link {
 	font-family: 'Roboto Mono', monospace;
 	text-decoration: none;
+	color: #0CAADC;
 }
 
 div[tabIndex="0"] {

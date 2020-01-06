@@ -22,7 +22,7 @@
 		<main>
 			<section id="landing">
 				<h6>Hi, I'm</h6>
-				<h1>Ethan Daniel.</h1>
+				<h1>Ethan Daniel<span>.</span></h1>
 				<div id="media-btns">
 					<a class="media-btn" href="mailto:ethandaniel@berkeley.edu"><i class="fas fa-envelope fa-fw"></i></a>
 					<a class="media-btn" href="https://www.facebook.com/ethancdaniel"><i class="fab fa-facebook-f fa-fw"></i></a>
@@ -34,19 +34,23 @@
 			<section id="about">
 				<h2>About</h2>
 				<p>Hello! I'm Ethan, a Healdsburg native, and a sophomore studying Computer Science at <a href="https://www.berkeley.edu/">University of California, Berkeley.</a> Last year, I interned at <a href="http://vytality.co/">Vytality Health</a> on the Android and iOS development teams. In the summer, I also interned at SMount Tech on the Android team.
-
-				I'm currently most comfortable with mobile app development (iOS/Android) and back-end web development and am looking to expand on my skillset through side projects, classes, and internships.</p>
+				<br>
+				<br> I'm currently most comfortable with mobile app development (iOS/Android) and back-end web development and am looking to expand on my skillset through side projects, classes, and internships.</p>
 			</section>
 
 			<section id="experience">
 				<h2>Experience</h2>
-				<ul>
-					<li><button class="work-btn" id="work-experience-0" tabIndex="0" onclick="toggleButtons(this.tabIndex)">SMount Tech</button></li>
-					<li><button class="work-btn" id="work-experience-1" tabIndex="1" onclick="toggleButtons(this.tabIndex)">Vytality Health</button></li>
-					<li><button class="work-btn" id="work-experience-2" tabIndex="2" onclick="toggleButtons(this.tabIndex)">The Third Workshop</button></li>
-					<li><button class="work-btn" id="work-experience-3" tabIndex="3" onclick="toggleButtons(this.tabIndex)">City of Healdsburg</button></li>
+				<div class="tabs-container">
+					<ul class="tabs-list">
+						<li class="work-li"><a class="work-btn" id="work-experience-0" tabIndex="0" onclick="toggleButtons(this.tabIndex)">SMount Tech</a></li>
+						<li class="work-li"><a class="work-btn" id="work-experience-1" tabIndex="1" onclick="toggleButtons(this.tabIndex)">Vytality</a></li>
+						<li class="work-li"><a class="work-btn" id="work-experience-2" tabIndex="2" onclick="toggleButtons(this.tabIndex)">TTW</a></li>
+						<li class="work-li"><a class="work-btn" id="work-experience-3" tabIndex="3" onclick="toggleButtons(this.tabIndex)">CoH</a></li>
+					</ul>
+					<div class="animation"></div>
+					<div class="animation-background"></div>
+				</div>
 
-				</ul>
 				<div class="work-description" tabIndex="0">
 					<h3>Android Developer @ SMount Tech</h3>
 					<h5>Jun 2019 - Sep 2019</h5>
