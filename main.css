@@ -1,18 +1,42 @@
+* {
+	margin: 0;
+	font-size: 100%;
+	font-family: 'Open Sans';
+	background: transparent;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+button {
+	font-family: 'Roboto Mono', monospace;
+}
 main {
 	margin: 0 auto;
 	max-width: 80em;
 }
 
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-family: 'Roboto Mono', monospace;
+}
 header {
 	display: inline-block;
 	
 	width: 100%;
-	margin: 0;
 }
 
-footer {
-	display: flex;
+footer p {
 	align-items: center;
+	display: flex;
+	font-family: 'Roboto Mono', monospace;
 	justify-content: center;
 }
 
@@ -24,8 +48,12 @@ ol li {
 	display: inline-block;
 }
 
+p {
+}
+
 ul li {
 	display: inline-block;
+	font-family: 'Roboto Mono', monospace;
 }
 
 .work-description {
@@ -36,8 +64,9 @@ ul li {
 	display: block;
 }
 
-#nav-logo {
+#logo {
 	float: left;
+	font-size: 1.7em;
 }
 
 #projects-wrapper {
@@ -48,6 +77,10 @@ ul li {
 
 #redirects {
 	float: right;
+}
+
+#resume-link {
+	font-family: 'Roboto Mono', monospace;
 }
 
 div[tabIndex="0"] {
