@@ -5,12 +5,20 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/f1a00d1eda.js" crossorigin="anonymous"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156062287-1"></script>
+	  <script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+  	  gtag('config', 'UA-156062287-1');
+  	</script>
 	</head>
 
 	<body>
 		<nav>
 			<a href="/" aria-label="home" id="logo">Ethan Daniel</a>
-				
+
 					<ul>
 						<li class="nav-link">About</li>
 						<li class="nav-link">Experience</li>
@@ -47,8 +55,8 @@
 						<li class="work-li"><a class="work-btn" id="work-experience-2" tabIndex="2" onclick="toggleButtons(this.tabIndex)">TTW</a></li>
 						<li class="work-li"><a class="work-btn" id="work-experience-3" tabIndex="3" onclick="toggleButtons(this.tabIndex)">CoH</a></li>
 					</ul>
-					<div class="animation"></div>
-					<div class="animation-background"></div>
+					<div id="indicator"></div>
+					<div id="indicator-background"></div>
 				</div>
 
 				<div class="work-description" tabIndex="0">
