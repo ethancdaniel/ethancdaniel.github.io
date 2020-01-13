@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	font-size: 100%;
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	padding: 0;
 	box-sizing: border-box;
 	color: #DDDBF1
@@ -15,6 +15,12 @@ body {
 	background-color: #1C1D21;
 }
 
+.work-btn-selected {
+	background-color: #555555;
+}
+.work-btn-not-selected {
+	background-color: transparent;
+}
 main {
 	margin: 0 auto;
 	max-width: 768px;
@@ -92,11 +98,7 @@ div #indicator-background {
 	opacity: 50%;
 }
 
-ol li {
-	display: inline-block;
-}
-
-p {
+p, .work-description ul li {
 	opacity: 60%;
 	line-height: 2em;
 }
@@ -108,7 +110,7 @@ section {
 span {
 	color: #0CAADC;
 }
-ul li {
+nav ul li {
 	display: inline-block;
 	font-family: 'Roboto Mono', monospace;
 	margin: 4px 0px;
@@ -126,11 +128,9 @@ ul li button {
 }
 
 ul li button:hover {
-	background-color: #696969;
-	opacity: 50%;
+	background-color: #555555;
 	cursor: pointer;
 }
-
 
 .media-btn {
 	padding: 10px 10px;
@@ -154,6 +154,7 @@ ul li button:hover {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	list-style-type: none;
 }
 
 .work-description {
@@ -161,12 +162,39 @@ ul li button:hover {
 	margin: 20px 0px;
 }
 
-.work-li {
-	width: 192px;
+i {
+	margin: 0;
+	padding: 0;
 }
 
-.work-item {
+.work-description .fa-ul {
+	list-style-position: inside;
+	list-style-type: none;
+	margin-left: 32px;
+}
+.work-description h3 {
+	font-size: 1.4em;
+	margin-bottom: 8px;
+}
+
+.work-description h5 {
+	font-size: 0.8em;
+	font-family: 'Roboto Mono', monospace;
+	margin-bottom: 15px;
+}
+
+.work-description ul li {
+	font-family: 'Open Sans', sans-serif;
 	display: block;
+	font-size: 0.9em;
+}
+
+.work-description ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.work-description ul .fa-li {
+	width: 14px;
 }
 
 #landing {

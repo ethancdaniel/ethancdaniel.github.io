@@ -1,6 +1,6 @@
 let descriptionButtons = document.getElementsByClassName("work-btn");
-	descriptionButtons.array.forEach(element => {
-		element.onclick = toggleButtons(element.id);
+	Array.prototype.forEach.call(descriptionButtons, element => {
+		element.onclick = function() {toggleButtons(element.tabIndex)};
 	});
 
 function toggleButtons(index) {
@@ -15,7 +15,8 @@ function toggleButtons(index) {
 	}
 
 	let indicator = document.getElementsByClassName("indicator")[0];
-	console.log(indicator);
+	let nameButtons = document.getElementsByClassName("work-btn");
+	
 	switch (index) {
 		case 0:
 			indicator.className = "indicator zeroth-elem";
@@ -31,5 +32,11 @@ function toggleButtons(index) {
 			break;
 	}
 
-	
+	Array.prototype.forEach.call(nameButtons, element => {
+		if (element.tabIndex === index) {
+			element.className = "work-btn work-btn-selected";
+		} else {
+			element.className = "work-btn work-btn-not-selected";
+		}
+	});
 }
