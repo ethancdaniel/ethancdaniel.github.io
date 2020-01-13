@@ -17,7 +17,7 @@ body {
 
 main {
 	margin: 0 auto;
-	max-width: 50em;
+	max-width: 768px;
 }
 
 h1 {
@@ -54,17 +54,33 @@ nav ul {
 	list-style: none;
 }
 
-div .animation {
+div .indicator {
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	height: 4px;
-	width: 25%;
+	width: 192px;
 	z-index: 1;
 	background-color: red;
 }
 
-div .animation-background {
+div .zeroth-elem {
+	left: 0;
+}
+
+div .first-elem {
+	left: 192px;
+}
+
+div .second-elem {
+	left: 384px;
+}
+
+div .third-elem {
+	left: 576px;
+}
+
+div #indicator-background {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -97,13 +113,13 @@ ul li {
 	margin: 10px 0px;
 }
 
-ul li a {
+ul li button {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 15px;
 	color: #0CAADC;
 	background-color: transparent;
+	border-style: none;
 	margin: 10px;
-	padding: 10px 0px;
 }
 
 .media-btn {
@@ -132,10 +148,11 @@ ul li a {
 
 .work-description {
 	display: none;
+	margin: 20px 0px;
 }
 
 .work-li {
-	width: 25%;
+	width: 192px;
 }
 
 .work-item {
