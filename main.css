@@ -61,7 +61,8 @@ div .indicator {
 	height: 4px;
 	width: 192px;
 	z-index: 1;
-	background-color: red;
+	background-color: #0CAADC;
+	transition: all .5s ease 0s;
 }
 
 div .zeroth-elem {
@@ -110,7 +111,7 @@ span {
 ul li {
 	display: inline-block;
 	font-family: 'Roboto Mono', monospace;
-	margin: 10px 0px;
+	margin: 4px 0px;
 }
 
 ul li button {
@@ -119,8 +120,17 @@ ul li button {
 	color: #0CAADC;
 	background-color: transparent;
 	border-style: none;
-	margin: 10px;
+	outline: none;
+	width: 192px;
+	padding: 12px;
 }
+
+ul li button:hover {
+	background-color: #696969;
+	opacity: 50%;
+	cursor: pointer;
+}
+
 
 .media-btn {
 	padding: 10px 10px;
