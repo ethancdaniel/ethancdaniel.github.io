@@ -7,23 +7,19 @@
 	color: #DDDBF1
 }
 
-a {
+p a {
 	color: #0CAADC;
+	opacity: 100%;
+	text-decoration: none;
 }
 
 body {
 	background-color: #1C1D21;
 }
 
-.work-btn-selected {
-	background-color: #555555;
-}
-.work-btn-not-selected {
-	background-color: transparent;
-}
 main {
 	margin: 0 auto;
-	max-width: 768px;
+	max-width: 1000px;
 }
 
 h1 {
@@ -65,7 +61,7 @@ div .indicator {
 	bottom: 0;
 	left: 0;
 	height: 4px;
-	width: 192px;
+	width: 250px;
 	z-index: 1;
 	background-color: #0CAADC;
 	transition: all .5s ease 0s;
@@ -76,15 +72,15 @@ div .zeroth-elem {
 }
 
 div .first-elem {
-	left: 192px;
+	left: 250px;
 }
 
 div .second-elem {
-	left: 384px;
+	left: 500px;
 }
 
 div .third-elem {
-	left: 576px;
+	left: 750px;
 }
 
 div #indicator-background {
@@ -99,7 +95,7 @@ div #indicator-background {
 }
 
 p, .work-description ul li {
-	opacity: 60%;
+	color: #7D818D;
 	line-height: 2em;
 }
 
@@ -123,13 +119,65 @@ ul li button {
 	background-color: transparent;
 	border-style: none;
 	outline: none;
-	width: 192px;
+	width: 250px;
 	padding: 12px;
 }
 
 ul li button:hover {
 	background-color: #555555;
 	cursor: pointer;
+}
+
+.card {
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	background-color: #26272B;
+	border-radius: 5px;
+	padding: 20px;
+	height: 400px;
+}
+
+.card:hover {
+	transition: all 0.3s ease-out;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: translate(-3px, -5px);
+	
+}
+
+.card i:hover {
+	color: #0CAADC;
+}
+.card i {
+	font-size: 3em;
+	margin-bottom: 10px;
+	transition: all 0.3s ease;
+}
+
+.card h3 {
+	font-size: 1.1em;
+	margin: 10px 0px;
+}
+
+.card p {
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+.card ul {
+	list-style-type: none;
+	position: absolute;
+	bottom: 20px;
+}
+
+.card ul li {
+	display: inline-block;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 0.8em;
+}
+
+.card ul li:not(:last-child) {
+	margin-right: 10px;
 }
 
 .media-btn {
@@ -162,9 +210,11 @@ ul li button:hover {
 	margin: 20px 0px;
 }
 
-i {
-	margin: 0;
-	padding: 0;
+.work-btn-selected {
+	background-color: #555555;
+}
+.work-btn-not-selected {
+	background-color: transparent;
 }
 
 .work-description .fa-ul {
