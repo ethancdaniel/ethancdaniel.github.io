@@ -1,7 +1,36 @@
-let descriptionButtons = document.getElementsByClassName("work-btn");
+if (document.readyState === 'loading') {
+	init();
+} else {
+	document.addEventListener('DOMContentLoaded', () => {
+		init();
+	});
+}
+
+function init() {
+	//Initialize navbar elements
+	//const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+	const navLinks = document.querySelectorAll("a[href^='#");
+
+	navLinks.forEach( link => {
+		link.onclick = function () {
+			let ref = "#" + link.href.split('#')[1];
+			if (1==0) {
+				window.scrollTo(0, document.querySelector(ref).offsetTop);
+				
+			} else {
+				window.scroll({
+					left: 0,
+					top: document.querySelector(ref.offsetTop)
+				});
+			}
+		};
+	});
+	//Initialize work experience elements
+	let descriptionButtons = document.getElementsByClassName("work-btn");
 	Array.prototype.forEach.call(descriptionButtons, element => {
 		element.onclick = function() {toggleButtons(element.tabIndex)};
 	});
+}
 
 function toggleButtons(index) {
 	let descriptionDivs = document.getElementsByClassName("work-description");

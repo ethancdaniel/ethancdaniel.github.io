@@ -4,9 +4,12 @@
 	font-family: 'Open Sans', sans-serif;
 	padding: 0;
 	box-sizing: border-box;
-	color: #DDDBF1
+	color: #DDDBF1;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 p a {
 	color: #0CAADC;
 	opacity: 100%;
@@ -29,6 +32,11 @@ h1 {
 h2 {
 	font-size: 1.6em;
 	margin: 30px 0px;
+}
+
+h3 a {
+	color: #0CAADC;
+	text-decoration: none;
 }
 
 h6 {
@@ -99,7 +107,7 @@ div #indicator-background {
 }
 
 p, .work-description ul li {
-	color: #7D818D;
+	color: #8892b0;
 	line-height: 2em;
 }
 
@@ -171,6 +179,7 @@ ul li button:hover {
 .card ul {
 	list-style-type: none;
 	position: absolute;
+	width: 87.7%;
 	bottom: 20px;
 }
 
@@ -197,6 +206,15 @@ ul li button:hover {
 
 .nav-link {
 	margin: 0px 15px; 
+}
+
+.nav-link a {
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.nav-link a:hover {
+	color: #0CAADC;
 }
 
 .tabs-container {
@@ -294,6 +312,11 @@ ul li button:hover {
 	font-family: 'Roboto Mono', monospace;
 	text-decoration: none;
 	color: #0CAADC;
+	border: 2px;
+	border-radius: 3px;
+	border-color: #0CAADC;
+	border-style: solid;
+	padding: 10px;
 }
 
 div[tabIndex="0"] {
