@@ -118,6 +118,12 @@ section {
 span {
 	color: #0CAADC;
 }
+
+svg {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
 nav ul li {
 	display: inline-block;
 	font-family: 'Roboto Mono', monospace;
@@ -157,12 +163,13 @@ ul li button:hover {
 	
 }
 
-.card i:hover {
-	color: #0CAADC;
+.card svg:hover {
+	fill: #F35523;
 }
-.card i {
+
+.card svg {
 	font-size: 3em;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	transition: all 0.3s ease;
 }
 
@@ -195,13 +202,15 @@ ul li button:hover {
 #contact {
 	margin: 200px 0px 100px 0px;
 }
-.media-btn {
-	padding: 10px;
-	margin: 0px 15px 0px 5px;
+
+.media-btn svg {
+	padding: 12px;
+	margin: 0px 8px;
 	border: 2px;
 	border-radius: 3px;
 	border-style: solid;
-	border-color: #0CAADC;
+	border-color: #F35523;
+	display: inline-block;
 }
 
 .nav-link {
@@ -276,6 +285,10 @@ ul li button:hover {
 	justify-content: center;
 }
 
+#landing div {
+	margin-top: 20px;
+}
+
 #link-contact {
 	text-decoration: none;
 	font-family: 'Roboto Mono', monospace;
@@ -295,11 +308,6 @@ ul li button:hover {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 1.5em;
-}
-
-#media-btns {
-	margin: 30px 0px;
-	font-size: 2rem;
 }
 
 #projects-wrapper {
