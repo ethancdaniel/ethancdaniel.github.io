@@ -302,18 +302,18 @@ ul li button:hover {
 	margin: 20px 0px;
 }
 
+.work-btn {
+	transition: all 0.2s ease;
+}
+
 .work-btn-selected {
 	background-color: #555555;
 }
+
 .work-btn-not-selected {
 	background-color: transparent;
 }
 
-.work-description .fa-ul {
-	list-style-position: inside;
-	list-style-type: none;
-	margin-left: 32px;
-}
 .work-description h3 {
 	font-size: 1.4em;
 	margin-bottom: 8px;
@@ -325,18 +325,20 @@ ul li button:hover {
 	margin-bottom: 15px;
 }
 
+.work-description ul li svg {
+	margin-right: 10px;
+}
+
 .work-description ul li {
 	font-family: 'Open Sans', sans-serif;
-	display: block;
+	list-style-type: none;
+	align-items: center;
+	display: flex;
 	font-size: 0.9em;
 }
 
 .work-description ul li:not(:last-child) {
 	margin-bottom: 10px;
-}
-
-.work-description ul .fa-li {
-	width: 14px;
 }
 
 #landing {
