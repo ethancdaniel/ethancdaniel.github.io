@@ -390,7 +390,7 @@ ul li button:hover {
 }
 
 #link-resume:hover, #link-contact:hover {
-	background-color: rgb(12,170,220, 0.2);
+	background-color: rgba(12,170,220, 0.12);
 	fill-opacity: 50%;
 }
 
