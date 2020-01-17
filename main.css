@@ -7,6 +7,26 @@
 	color: #DDDBF1;
 }
 
+.link-hover {
+	position: relative;
+	padding-bottom: 3px;
+}
+.link-hover:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #0CAADC;
+	transform: scaleX(0);
+	transition: all .3s ease;
+}
+
+.link-hover:hover:after {
+	transform: scaleX(1);
+}
 html {
 	scroll-behavior: smooth;
 }
@@ -211,14 +231,6 @@ ul li button:hover {
 }
 
 .media-svg {
-	transition: all 0.3s ease;
-}
-
-.media-svg:hover {
-	background-color: rgba(243,85,35,0.2);
-}
-
-.media-svg {
 	padding: 12px;
 	margin: 0px 8px;
 	border: 2px;
@@ -226,6 +238,11 @@ ul li button:hover {
 	border-style: solid;
 	border-color: #F35523;
 	display: inline-block;
+	transition: all 0.3s ease;
+}
+
+.media-svg:hover {
+	background-color: rgba(243,85,35,0.2);
 }
 
 .nav-link {
