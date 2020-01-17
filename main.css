@@ -81,7 +81,15 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 35px;
+	top: 0;
+	left: 0;
+	padding: 35px;
+	position: fixed;
+	width: 100%;
+	transition: top 0.3s;
+	box-shadow: 0 16px 8px 0 rgba(0,0,0,0.2);
+	z-index: 10;
+	background: #1C1D21;
 }
 
 nav a {
@@ -94,6 +102,7 @@ nav a:hover {
 
 nav ul {
 	list-style: none;
+	float: right;
 }
 
 div .indicator {
@@ -258,6 +267,14 @@ ul li button:hover {
 	color: #0CAADC;
 }
 
+.nav-visible {
+	top: 0px;
+}
+
+.nav-invisible {
+	top: -103px;
+}
+
 .project-link-award a {
 	float: left;
 	clear: both;
@@ -347,6 +364,7 @@ ul li button:hover {
 }
 
 #logo {
+	float: left;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 1.5em;
