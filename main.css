@@ -64,6 +64,14 @@ nav {
 	margin: 35px;
 }
 
+nav a {
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	color: #0CAADC;
+}
+
 nav ul {
 	list-style: none;
 }
@@ -72,7 +80,7 @@ div .indicator {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: 4px;
+	height: 2px;
 	width: 250px;
 	z-index: 1;
 	background-color: #0CAADC;
@@ -99,7 +107,7 @@ div #indicator-background {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: 4px;
+	height: 2px;
 	width: 100%;
 	z-index: 0;
 	background-color: #696969;
@@ -160,7 +168,6 @@ ul li button:hover {
 	transition: all 0.3s ease-out;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	transform: translate(-3px, -5px);
-	
 }
 
 .card svg:hover {
@@ -203,7 +210,15 @@ ul li button:hover {
 	margin: 200px 0px 100px 0px;
 }
 
-.media-btn svg {
+.media-svg {
+	transition: all 0.3s ease;
+}
+
+.media-svg:hover {
+	background-color: rgba(243,85,35,0.2);
+}
+
+.media-svg {
 	padding: 12px;
 	margin: 0px 8px;
 	border: 2px;
@@ -224,6 +239,16 @@ ul li button:hover {
 
 .nav-link a:hover {
 	color: #0CAADC;
+}
+
+.project-link-award a {
+	float: left;
+	clear: both;
+	margin-right: 15px;
+}
+.project-award {
+	display: inline;
+	color: #D4DF9E;
 }
 
 .tabs-container {
@@ -316,7 +341,7 @@ ul li button:hover {
 	grid-gap: 10px;
 }
 
-#resume-link {
+#link-resume {
 	font-family: 'Roboto Mono', monospace;
 	text-decoration: none;
 	color: #0CAADC;
@@ -325,6 +350,15 @@ ul li button:hover {
 	border-color: #0CAADC;
 	border-style: solid;
 	padding: 10px;
+}
+
+#link-resume:hover, #link-contact:hover {
+	background-color: rgb(12,170,220, 0.2);
+	fill-opacity: 50%;
+}
+
+#link-contact {
+	transition: all 0.3s ease;
 }
 
 div[tabIndex="0"] {
