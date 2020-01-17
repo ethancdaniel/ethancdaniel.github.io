@@ -141,6 +141,10 @@ section {
 	margin-top: 200px;
 }
 
+section:not(:last-child) {
+	margin-bottom: 300px;
+}
+
 span {
 	color: #0CAADC;
 }
