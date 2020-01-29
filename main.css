@@ -176,6 +176,10 @@ ul li button:hover {
 	cursor: pointer;
 }
 
+.about-profile {
+	display: inline-block;
+}
+
 .card {
 	position: relative;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -389,6 +393,17 @@ ul li button:hover {
 
 #link-contact {
 	transition: all 0.3s ease;
+}
+
+#profile-paragraph {
+	max-width: 500px;
+	display: inline-block;
+	margin-right: 80px;
+}
+
+#profile-picture {
+	max-width: 350px;
+	float: right;
 }
 
 div[tabIndex="0"] {
