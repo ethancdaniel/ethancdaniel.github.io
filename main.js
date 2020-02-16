@@ -2,19 +2,16 @@ let buttonWidths = [];
 $(document).ready(function() {
   //Initialize navbar elements
   //const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-  const navLinks = document.querySelectorAll("a[href^='#");
+  const navLinks = document.getElementsByClassName("nav-link");
 
-  navLinks.forEach(link => {
-    link.onclick = function() {
-      let ref = "#" + link.href.split("#")[1];
-      if (1 == 0) {
-        window.scrollTo(0, document.querySelector(ref).offsetTop);
-      } else {
-        window.scroll({
-          left: 0,
-          top: document.querySelector(ref.offsetTop)
-        });
-      }
+  Array.prototype.forEach.call(navLinks, link => {
+    link.onclick = () => {
+      const ref = link.href.split("#")[1];
+      const target = document.getElementsByClassName("section-" + ref)[0];
+      console.log(target);
+      console.log(target.offsetTop);
+      window.focus();
+      window.scrollTo(0, target.offsetTop - 125);
     };
   });
   //Initialize work experience elements
@@ -52,7 +49,6 @@ $(document).ready(function() {
   for (let i = 0; i < 4; i++) {
     buttonWidths.push(nameButtons[i].offsetWidth);
   }
-  console.log(buttonWidths);
 });
 
 function toggleButtons(index) {
@@ -67,10 +63,7 @@ function toggleButtons(index) {
   }
 
   let nameButtons = document.getElementsByClassName("work-btn");
-  console.log("Previous left value" + $(".indicator").width());
   $(".indicator").width(buttonWidths[index]);
-  console.log("New left value" + $(".indicator").width());
-
   let sumOffset = 0;
   for (let i = 0; i < index; i++) {
     sumOffset += buttonWidths[i];

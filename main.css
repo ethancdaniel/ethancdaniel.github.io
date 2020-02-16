@@ -213,7 +213,7 @@ ul li button:hover {
 .card ul li:not(:last-child) {
   margin-right: 10px;
 }
-#contact {
+.section-contact {
   margin: 200px 0px 100px 0px;
 }
 
@@ -234,14 +234,11 @@ ul li button:hover {
 
 .nav-link {
   margin: 0px 15px;
-}
-
-.nav-link a {
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.nav-link a:hover {
+.nav-link:hover {
   color: #0caadc;
 }
 
@@ -265,12 +262,13 @@ ul li button:hover {
 
 .tabs-container {
   position: relative;
+  max-width: 693px;
   overflow-x: auto;
 }
 
 .tabs-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
   list-style-type: none;
 }
@@ -299,7 +297,7 @@ ul li button:hover {
 
 .work-description h5 {
   font-size: 0.8rem;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Open Sans", monospace;
   margin-bottom: 15px;
 }
 
@@ -319,12 +317,12 @@ ul li button:hover {
   margin-bottom: 10px;
 }
 
-#landing {
+.section-landing {
   margin: 450px 0px 700px 0px;
   justify-content: center;
 }
 
-#landing div {
+.section-landing div {
   margin-top: 20px;
 }
 
@@ -419,7 +417,7 @@ div[tabIndex="0"] {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1115px) {
   #profile-picture {
     width: 200px;
     float: none;
@@ -431,7 +429,7 @@ div[tabIndex="0"] {
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1045px) {
   #projects-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -439,21 +437,25 @@ div[tabIndex="0"] {
   }
 }
 
-@media (max-width: 683px) {
+@media (max-width: 700px) {
   #projects-wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
+  }
+
+  .card {
+    height: 300px;
   }
 }
 
-@media (max-width: 335px) {
-  #projects-wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
+@media (max-width: 545px) {
+  .card {
+    height: 400px;
   }
+}
 
+@media (max-width: 352px) {
   .card {
     height: 500px;
   }
