@@ -268,7 +268,7 @@ ul li button:hover {
 
 .tabs-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
   list-style-type: none;
 }
