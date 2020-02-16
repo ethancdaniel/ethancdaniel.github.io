@@ -43,7 +43,7 @@ body {
 main {
   margin: 0 auto;
   width: 80%;
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 h1 {
@@ -159,10 +159,6 @@ ul li button {
 ul li button:hover {
   background-color: #555555;
   cursor: pointer;
-}
-
-.about-profile {
-  display: inline-block;
 }
 
 .card {
@@ -384,14 +380,15 @@ ul li button:hover {
 #profile-paragraph {
   max-width: 500px;
   display: inline-block;
-  margin-right: 80px;
 }
 
 #profile-picture {
-  width: 30%;
+  width: 40%;
   height: auto;
-  max-width: 400px;
-  display: inline-block;
+  margin-left: 80px;
+  max-width: 300px;
+  display: block;
+  float: right;
 }
 
 div[tabIndex="0"] {
@@ -422,9 +419,15 @@ div[tabIndex="0"] {
   }
 }
 
-@media (max-width: 1162px) {
+@media (max-width: 1100px) {
   #profile-picture {
-    margin: 0 auto;
+    width: 200px;
+    float: none;
+    margin: 10px auto 0px auto;
+  }
+
+  .about-profile {
+    max-width: 500px;
   }
 }
 
