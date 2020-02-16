@@ -1,230 +1,506 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Ethan Daniel</title>
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap" rel="stylesheet">
-		<link rel="shortcut icon" type="image/png" href="img/favicon.ico">
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156062287-1"></script>
-	  <script>
-	    window.dataLayer = window.dataLayer || [];
-	    function gtag(){dataLayer.push(arguments);}
-	    gtag('js', new Date());
-  	  gtag('config', 'UA-156062287-1');
-  	</script>
-	</head>
+  <head>
+    <title>Ethan Daniel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="hamburgers.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-156062287-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-156062287-1");
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
 
-	<body>
-		<nav>
-			<a href="/" aria-label="home" id="logo">Ethan Daniel</a>
-			<ul>
-				<li class="nav-link"><a href="#about" class="link-hover">About</a></li>
-				<li class="nav-link"><a href="#experience" class="link-hover">Experience</a></li>
-				<li class="nav-link"><a href="#projects" class="link-hover">Projects</a></li>
-				<li class="nav-link"><a href="#contact" class="link-hover">Contact</a></li>
-				<li class="nav-link"><a href="/Resume_Ethan_Daniel.pdf" id="link-resume">Resume</a></li>
-			</ul>
-		</nav>
-		<main>
-			<section id="landing">
-				<h6>Hi, I'm</h6>
-				<h1>Ethan Daniel<span>.</span></h1>
-				<div id="media-btns">
-					<a href="mailto:ethandaniel@berkeley.edu"><svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 24 24" class="media-svg"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
-					<a href="https://www.facebook.com/ethancdaniel"><svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 24 24" class="media-svg"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
-					<a href="https://www.linkedin.com/in/ethancdaniel/"><svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 24 24" class="media-svg"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
-					<a href="http://github.com/ethancdaniel"><svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 24 24" class="media-svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-				</div>
-			</section>
+  <body>
+    <nav>
+      <a href="/" aria-label="home" id="logo">Ethan Daniel</a>
+      <ul>
+        <li class="nav-link"><a href="#about" class="link-hover">About</a></li>
+        <li class="nav-link">
+          <a href="#experience" class="link-hover">Experience</a>
+        </li>
+        <li class="nav-link">
+          <a href="#projects" class="link-hover">Projects</a>
+        </li>
+        <li class="nav-link">
+          <a href="#contact" class="link-hover">Contact</a>
+        </li>
+        <li class="nav-link">
+          <a href="/Resume_Ethan_Daniel.pdf" id="link-resume">Resume</a>
+        </li>
+      </ul>
+      <button class="hamburger-menu hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </nav>
+    <main>
+      <section id="landing">
+        <h6>Hi, I'm</h6>
+        <h1>Ethan Daniel<span>.</span></h1>
+        <div id="media-btns">
+          <a href="mailto:ethandaniel@berkeley.edu"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="65"
+              height="65"
+              viewBox="0 0 24 24"
+              class="media-svg"
+            >
+              <path
+                d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+              /></svg
+          ></a>
+          <a href="https://www.facebook.com/ethancdaniel"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="65"
+              height="65"
+              viewBox="0 0 24 24"
+              class="media-svg"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              /></svg
+          ></a>
+          <a href="https://www.linkedin.com/in/ethancdaniel/"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="65"
+              height="65"
+              viewBox="0 0 24 24"
+              class="media-svg"
+            >
+              <path
+                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+              /></svg
+          ></a>
+          <a href="http://github.com/ethancdaniel"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="65"
+              height="65"
+              viewBox="0 0 24 24"
+              class="media-svg"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              /></svg
+          ></a>
+        </div>
+      </section>
 
-			<section id="about">
-				<h2>About</h2>
-				<div class="about-profile">
-					<p id="profile-paragraph">Hello! I'm Ethan, a Healdsburg native, and a sophomore studying Computer Science at <a href="https://www.berkeley.edu/" class="link-hover">University of California, Berkeley.</a> Last year, I interned at <a href="http://vytality.co/" class="link-hover">Vytality Health</a> on the Android and iOS development teams. In the summer, I also interned at SMount Tech on the Android team. <br><br> 
-						I'm currently most comfortable with mobile app development (iOS/Android) and back-end web development and am looking to expand on my skillset through side projects, classes, and internships.
-					</p>
-					<img src="img/profile.jpg" alt="profile picture" id="profile-picture">
-				</div>
-			</section>
+      <section id="about">
+        <h2>About</h2>
+        <div class="about-profile">
+          <p id="profile-paragraph">
+            Hello! I'm Ethan, a Healdsburg native, and a sophomore studying
+            Computer Science at
+            <a href="https://www.berkeley.edu/" class="link-hover"
+              >University of California, Berkeley.</a
+            >
+            Last year, I interned at
+            <a href="http://vytality.co/" class="link-hover">Vytality Health</a>
+            on the Android and iOS development teams. In the summer, I also
+            interned at SMount Tech on the Android team. <br /><br />
+            I'm currently most comfortable with mobile app development
+            (iOS/Android) and back-end web development and am looking to expand
+            on my skillset through side projects, classes, and internships.
+          </p>
+          <img
+            src="img/profile.jpg"
+            alt="profile picture"
+            id="profile-picture"
+          />
+        </div>
+      </section>
 
-			<section id="experience">
-				<h2>Experience</h2>
-				<div class="tabs-container">
-					<ul class="tabs-list">
-						<li><button class="work-btn work-btn-selected" id="work-experience-0" tabIndex="0">SMount Tech</button></li>
-						<li><button class="work-btn" id="work-experience-1" tabIndex="1">Vytality</button></li>
-						<li><button class="work-btn" id="work-experience-2" tabIndex="2">TTW</button></li>
-						<li><button class="work-btn" id="work-experience-3" tabIndex="3">CoH</button></li>
-					</ul>
-					<div class="indicator"></div>
-					<div id="indicator-background"></div>
-				</div>
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="tabs-container">
+          <ul class="tabs-list">
+            <li>
+              <button
+                class="work-btn work-btn-selected"
+                id="work-experience-0"
+                tabindex="0"
+              >
+                SMount Tech
+              </button>
+            </li>
+            <li>
+              <button class="work-btn" id="work-experience-1" tabindex="1">
+                Vytality Health
+              </button>
+            </li>
+            <li>
+              <button class="work-btn" id="work-experience-2" tabindex="2">
+                The Third Workshop
+              </button>
+            </li>
+            <li>
+              <button class="work-btn" id="work-experience-3" tabindex="3">
+                City of Healdsburg
+              </button>
+            </li>
+          </ul>
+          <div class="indicator"></div>
+          <div id="indicator-background"></div>
+        </div>
 
-				<div class="work-description" tabIndex="0">
-					<h3>Android Developer @ SMount Tech</h3>
-					<h5>Jun 2019 - Sep 2019</h5>
-					<ul>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-					   			<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Worked on the Android development team to create a functional app prototype
-						</li>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Utilized RabbitMQ to send messages to other users on a peer-to-peer network
-						</li>
-					</ul>
-				</div>
-				<div class="work-description" tabIndex="1">
-					<h3>Software Engineering Intern @ <a href="https://vytality.co/" class="link-hover">Vytality Health</a></h3>
-					<h5>Dec 2018 - Sep 2019</h5>
-					<ul>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Developed iOS and Android Versions of an app for a Y Combinator startup
-						</li>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Rapidly prototyped different iterations of the app using Agile development
-						</li>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Implemented core functionality for an Instagram-like social feed
-						</li>
-					</ul>
-				</div>
-				<div class="work-description" tabIndex="2">
-					<h3>Programming Mentor @ <a href="thirdworkshop.com" class="link-hover">The Third Workshop</a></h3>
-					<h5>Dec 2018 - Sep 2019</h5>
-					<ul>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Mentored children of all ages in programming
-						</li>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Taught students the fundamentals of programming using tools such as Snap and Codecademy
-						</li>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Provided IT services such as building PCs
-						</li>
-					</ul>
-				</div>
-				<div class="work-description" tabIndex="3">
-					<h3>Coding Camp Instructor @ <a href="https://www.ci.healdsburg.ca.us/" class="link-hover">City of Healdsburg</a></h3>
-					<h5>Dec 2018 - Sep 2019</h5>
-					<ul>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Created a curriculum to teach students the basics of Java in a week-long course
-						</li>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
-							viewBox="0 0 407.436 407.436">
-								<polygon points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "/>
-							</svg>
-							Provided additional resources for students to further their programming skills after the coding camp
-						</li>
-					</ul>
-				</div>
-			</section>
+        <div class="work-description" tabindex="0">
+          <h3>Android Developer @ SMount Tech</h3>
+          <h5>Jun 2019 - Sep 2019</h5>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Worked on the Android development team to create a functional app
+              prototype
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Utilized RabbitMQ to send messages to other users on a
+              peer-to-peer network
+            </li>
+          </ul>
+        </div>
+        <div class="work-description" tabindex="1">
+          <h3>
+            Software Engineering Intern @
+            <a href="https://vytality.co/" class="link-hover"
+              >Vytality Health</a
+            >
+          </h3>
+          <h5>Dec 2018 - Sep 2019</h5>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Developed iOS and Android Versions of an app for a Y Combinator
+              startup
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Rapidly prototyped different iterations of the app using Agile
+              development
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Implemented core functionality for an Instagram-like social feed
+            </li>
+          </ul>
+        </div>
+        <div class="work-description" tabindex="2">
+          <h3>
+            Programming Mentor @
+            <a href="thirdworkshop.com" class="link-hover"
+              >The Third Workshop</a
+            >
+          </h3>
+          <h5>Dec 2018 - Sep 2019</h5>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Mentored children of all ages in programming
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Taught students the fundamentals of programming using tools such
+              as Snap and Codecademy
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Provided IT services such as building PCs
+            </li>
+          </ul>
+        </div>
+        <div class="work-description" tabindex="3">
+          <h3>
+            Coding Camp Instructor @
+            <a href="https://www.ci.healdsburg.ca.us/" class="link-hover"
+              >City of Healdsburg</a
+            >
+          </h3>
+          <h5>Dec 2018 - Sep 2019</h5>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Created a curriculum to teach students the basics of Java in a
+              week-long course
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15px"
+                height="15px"
+                viewBox="0 0 407.436 407.436"
+              >
+                <polygon
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
+                />
+              </svg>
+              Provided additional resources for students to further their
+              programming skills after the coding camp
+            </li>
+          </ul>
+        </div>
+      </section>
 
-			<section id="projects">
-				<h2>Projects</h2>
-				<div id="projects-wrapper">
-					<div class="card">
-						<div class="project-link-award">
-							<a href="https://github.com/Kyle1668/treehacks2019"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-							<p class="project-award">"Best Use of Docker" Finalist, Presented at DockerCon 2019.</p>
-						</div>
-						<h3>NetGuard</h3>
-						<p>IoT security tool used to protect against DDoS attacks by closing all physical ports, uploading attack information to an Azure database, and sending a private SSH key to the device owner to reconfigure the device.
-							
-						</p>
-						<ul>
-							<li>Python</li>
-							<li>SQL</li>
-							<li>Docker</li>
-							<li>Azure</li>
-						</ul>
-					</div>
-					<div class="card">
-						<div class="project-link-award">
-							<a href="https://github.com/ethancdaniel/Drip"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-							<p class="project-award">Congressional App Challenge Finalist 2016</p>
-						</div>
-						<h3>Drip</h3>
-						<p>Reservoir tracker for California. Scrapes reservoir level data from the <a href="https://cdec.water.ca.gov/" class="link-hover">CDEC</a> and graphs reservoir levels over a selected time period.
-						<ul>
-							<li>Android</li>
-							<li>Java</li>
-							<li>XML</li>
-						</ul>
-					</div>
-					<div class="card">
-						<a href="https://github.com/ethancdaniel/TheHoundsBark"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-						<h3>The Hound's Bark</h3>
-						<p>News publishing website for the Healdsburg High School journalism class. Uses date and submitted information to categorize articles in the database and generate unique URLs for each article. Not currently in use.</p>
-						<ul>
-							<li>Python</li>
-							<li>Flask</li>
-							<li>SQL</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Bootstrap</li>
-						</ul>
-					</div>
-					<div class="card">
-						<a href="https://github.com/ethancdaniel/SCBC_App"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-						<h3>Sonoma County Bike Coalition</h3>
-						<p>Android app that scrapes and displays news articles from the <a href="https://www.bikesonoma.org/" class="link-hover">SCBC website</a>. Feature to display map markers for cycling-related points of interest in progress.</p>
-						<ul>
-							<li>Android</li>
-							<li>Java</li>
-							<li>XML</li>
-							<li>Python</li>
-							<li>Flask</li>
-							<li>HTML</li>
-							<li>CSS</li>
-						</ul>
-					</div>
-					<div class="card">
-						<a href="https://github.com/ethancdaniel/WorkoutGenerator"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-						<h3>Workout Generator</h3>
-						<p>Project for my iOS DeCal class at UC Berkeley to randomly generate workouts based on user-selected muscle groups.</p>
-						<ul>
-							<li>iOS</li>
-							<li>Swift</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div id="projects-wrapper">
+          <div class="card">
+            <div class="project-link-award">
+              <a href="https://github.com/Kyle1668/treehacks2019"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  /></svg
+              ></a>
+              <p class="project-award">
+                "Best Use of Docker" Finalist, Presented at DockerCon 2019.
+              </p>
+            </div>
+            <h3>NetGuard</h3>
+            <p>
+              IoT security tool used to protect against DDoS attacks by closing
+              all physical ports, uploading attack information to an Azure
+              database, and sending a private SSH key to the device owner to
+              reconfigure the device.
+            </p>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Docker</li>
+              <li>Azure</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="project-link-award">
+              <a href="https://github.com/ethancdaniel/Drip"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  /></svg
+              ></a>
+              <p class="project-award">
+                Congressional App Challenge Finalist 2016
+              </p>
+            </div>
+            <h3>Drip</h3>
+            <p>
+              Reservoir tracker for California. Scrapes reservoir level data
+              from the
+              <a href="https://cdec.water.ca.gov/" class="link-hover">CDEC</a>
+              and graphs reservoir levels over a selected time period.
+            </p>
+            <ul>
+              <li>Android</li>
+              <li>Java</li>
+              <li>XML</li>
+            </ul>
+          </div>
+          <div class="card">
+            <a href="https://github.com/ethancdaniel/TheHoundsBark"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                /></svg
+            ></a>
+            <h3>The Hound's Bark</h3>
+            <p>
+              News publishing website for the Healdsburg High School journalism
+              class. Uses date and submitted information to categorize articles
+              in the database and generate unique URLs for each article. Not
+              currently in use.
+            </p>
+            <ul>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>SQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="card">
+            <a href="https://github.com/ethancdaniel/SCBC_App"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                /></svg
+            ></a>
+            <h3>Sonoma County Bike Coalition</h3>
+            <p>
+              Android app that scrapes and displays news articles from the
+              <a href="https://www.bikesonoma.org/" class="link-hover"
+                >SCBC website</a
+              >. Feature to display map markers for cycling-related points of
+              interest in progress.
+            </p>
+            <ul>
+              <li>Android</li>
+              <li>Java</li>
+              <li>XML</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="card">
+            <a href="https://github.com/ethancdaniel/WorkoutGenerator"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                /></svg
+            ></a>
+            <h3>Workout Generator</h3>
+            <p>
+              Project for my iOS DeCal class at UC Berkeley to randomly generate
+              workouts based on user-selected muscle groups.
+            </p>
+            <ul>
+              <li>iOS</li>
+              <li>Swift</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-			<section id="contact">
-				<h2>Contact</h2>
-				<p id="contact-paragraph">I'm currently looking for summer 2020 internship opportunities. Whether you'd like to work on a project together or contact me about a professional opportunity, I will do my best to answer your email!</p>
-				<a href="mailto:ethandaniel@berkeley.edu" id="link-contact">Get In Touch</a>
-			</section>
-		</main>
-		<script src="main.js"></script>
-	</body>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p id="contact-paragraph">
+          I'm currently looking for summer 2020 internship opportunities.
+          Whether you'd like to work on a project together or contact me about a
+          professional opportunity, I will do my best to answer your email!
+        </p>
+        <a href="mailto:ethandaniel@berkeley.edu" id="link-contact"
+          >Get In Touch</a
+        >
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
