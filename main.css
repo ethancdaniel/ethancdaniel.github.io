@@ -73,12 +73,8 @@ nav {
   top: 0;
   left: 0;
   padding: 20px 35px 20px 20px;
-  position: fixed;
+  position: static;
   width: 100%;
-  transition: top 0.3s;
-  box-shadow: 0 16px 8px 0 rgba(0, 0, 0, 0.2);
-  z-index: 10;
-  background: #1c1d21;
 }
 
 nav a {
@@ -227,9 +223,9 @@ ul li button:hover {
 }
 
 .nav-link {
-  margin: 0px 15px;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin: 0px 10px;
 }
 
 .nav-link:hover {
@@ -324,6 +320,10 @@ ul li button:hover {
   margin-top: 20px;
 }
 
+#about-link {
+  margin: 0px 10px 0px 0px;
+}
+
 #link-contact {
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
@@ -405,13 +405,30 @@ div[tabIndex="0"] {
   background-color: #ffffff !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 660px) {
+  nav {
+    display: block;
+  }
   nav ul {
-    display: none;
+    width: 100%;
+    display: block;
+    float: none;
   }
 
-  .hamburger-menu {
-    display: block !important;
+  nav ul li {
+    margin: 15px 0px;
+  }
+
+  .nav-link {
+    margin: 0px 0px 5px 0px;
+  }
+
+  #about-link {
+    margin-right: 5px;
+  }
+  #logo {
+    display: block;
+    width: 100%;
   }
 }
 

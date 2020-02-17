@@ -22,18 +22,6 @@ $(document).ready(function() {
     };
   });
 
-  // Navbar scrolling, initialize prevpos to high number so that navbar shows
-  var prevPos = 999;
-  window.onscroll = function() {
-    var currentPos = window.pageYOffset;
-    if (prevPos > currentPos) {
-      document.getElementsByTagName("nav")[0].className = "nav-visible";
-    } else {
-      document.getElementsByTagName("nav")[0].className = "nav-invisible";
-    }
-    prevPos = currentPos;
-  };
-
   //Initialize hamburger menu
   var hamburgerMenu = document.querySelector(".hamburger");
   hamburgerMenu.addEventListener("click", () => {
