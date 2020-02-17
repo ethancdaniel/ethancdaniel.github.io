@@ -313,7 +313,7 @@ ul li button:hover {
   justify-content: center;
   align-items: flex-start;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .section-landing div {
