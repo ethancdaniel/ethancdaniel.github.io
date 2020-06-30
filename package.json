@@ -1,0 +1,31 @@
+{
+  "name": "Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "carbon-components": "^10.9.3",
+    "carbon-icons": "^7.0.7",
+    "carbon-components-react": "^7.9.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethancdaniel/ethancdaniel.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethancdaniel/ethancdaniel.github.io/issues"
+  },
+  "homepage": "https://github.com/ethancdaniel/ethancdaniel.github.io#readme"
+}

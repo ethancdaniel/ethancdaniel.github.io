@@ -1,0 +1,341 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+
+$base-font: 'Open Sans', sans-serif;
+$hamburger-width: 20px;
+$hamburger-height: 1px;
+$hamburger-spacing: 5px;
+$experience-bullet-spacing: 90px;
+
+$colors: (
+  'primary': #BA53DE,
+  'secondary': #F469A9,
+  'background': #F1F1F1,
+  'cards': #993FB9,
+  'work-links': #F2CC8F
+);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $base-font;
+}
+
+a {
+  color: map-get($map: $colors, $key: 'secondary');
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: black;
+}
+
+body {
+  background-color: map-get($map: $colors, $key: 'background');
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h5 {
+  margin: 10px 0px 10px 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+
+.project-github {
+  fill: white;
+}
+.card {
+  background: map-get($map: $colors, $key: 'cards');
+  padding: 15px;
+  margin-top: 12px;
+}
+
+.work-description > h3 > a {
+  color: map-get($map: $colors, $key: 'work-links');
+}
+
+.card, .work-description {
+  box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.18);
+  color: white;
+  border-radius: 5px;
+}
+
+.section-landing p {
+  font-size: 1.2em;
+  margin-top: 40px;
+}
+
+.invisible {
+  display: none;
+}
+
+.hamburger-wrapper {
+  margin: $hamburger-spacing * 2;
+  width: $hamburger-width;
+  height: $hamburger-height + $hamburger-spacing * 2;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY($hamburger-spacing);
+  transition: all 0ms 300ms;
+
+  &,
+  &:after,
+  &:before {
+    width: $hamburger-width;
+    height: $hamburger-height;
+    background-color: map-get($map: $colors, $key: 'secondary');
+  }
+
+  &.animate {
+    background-color: rgba(255, 200, 200, 0);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: $hamburger-spacing;
+
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: $hamburger-spacing;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+}
+
+.timeline-rect { 
+  position: relative;
+  width: 4px;
+  height: 400px;
+  background-color: map-get($map: $colors, $key: 'secondary');
+}
+
+.timeline-bullet {
+  position: absolute;
+  left: -8px;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-color: map-get($map: $colors, $key: 'secondary');
+  background-color: map-get($map: $colors, $key: 'background');
+  z-index: 1;
+  border-width: 2px;
+}
+
+ul li {
+  list-style: none;
+}
+
+#one {
+  top: 15px;
+}
+
+#two {
+  top: $experience-bullet-spacing * 2;
+}
+
+#three {
+  top: $experience-bullet-spacing * 3;
+}
+
+#four {
+  top: $experience-bullet-spacing * 4;
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.landing-circles {
+  position: absolute;
+  top: -9px;
+  left: -7.1vw;
+  z-index: -1;
+  width: 33.89vw;
+}
+
+.landing-decagon {
+  position: absolute;
+  z-index: -1;
+  top: -12.56vw;
+  left: 45.56vw;
+  width: 27.2vw;
+}
+
+.landing-triangle {
+  position: absolute;
+  z-index: -1;
+  top: -11.1vw;
+  left: 25.78vw;
+  width: 22.78vw; 
+}
+
+.media-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+  margin-top: 20px;
+}
+section:not(:first-child) {
+  margin-top: 100px;
+}
+
+.section-experience { 
+  position: relative;
+}
+
+.section-landing {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.vector-container {
+  position: relative;
+  margin-left: 7vw;
+  max-width: 537px;
+}
+
+.vector-container h1 {
+  color: white;
+  background-color: map-get($map: $colors, $key: 'primary');
+  border-radius: 5px;
+  font-size: 7vw;
+  line-height: 10vw;
+  height: 16.6vw;
+  display: flex;
+  width: 60.78vw;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  padding: 14px 21px;
+  transform: rotate(-7.22deg);
+}
+.description-container {
+  position: relative;
+}
+.work-description {
+  background-color: map-get($map: $colors, $key: 'cards');
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  width: 100%;
+  color: white;
+}
+
+.section-contact {
+  margin-bottom: 50px;
+}
+
+.work-description::after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: 10px;
+  top: 70px;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: map-get($map: $colors, $key: 'secondary');
+  border-radius: 25px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+  padding: 8px 16px 8px 16px;
+  font-size: 0.8em;
+  margin-top: 15px;
+}
+
+#logo {
+  font-size: 23px;
+}
+
+#logo-name {
+  font-family: $base-font;
+  font-size: 23px;
+  color: map-get($map: $colors, $key: 'secondary');
+  text-decoration: none;
+}
+
+#profile-picture {
+    width: 50%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 300px;
+}
+
+#projects-btn {
+  color: white;
+  background: map-get($map: $colors, $key: 'secondary');
+}
+
+@media screen and (min-width: 900px) {
+  .section-landing {
+    margin-left: 128px;
+  }
+  .vector-container h1 {
+     font-size: 63px;
+     line-height: 86px;
+     width: 537px;
+     height: 150px;
+     display: flex;
+     align-items: center;
+  }
+
+  .landing-decagon {
+    width: 245px;
+    top: -113px;
+    left: 410px;
+  }
+
+  .landing-triangle {
+    width: 205px;
+    top: -100px;
+    left: 232px;
+  }
+
+  .landing-circles {
+    width: 305px;
+    left: -64px;
+  }
+}

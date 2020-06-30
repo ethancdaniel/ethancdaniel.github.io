@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ethan Daniel</title>
-    <meta name="viewport" content="width=device-width, initial-scale" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-156062287-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-156062287-1");
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  </head>
 
-  <body>
-    <nav>
-      <a href="/" aria-label="home" id="logo">Ethan Daniel</a>
-      <ul>
+<head>
+  <title>Ethan Daniel</title>
+  <meta name="viewport" content="width=device-width, initial-scale" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156062287-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-156062287-1');
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="/">
+        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g style="mix-blend-mode:darken">
+            <circle cx="8.5" cy="17.5" r="8" stroke="#F469A9" />
+          </g>
+          <g style="mix-blend-mode:darken">
+            <circle cx="13.5" cy="8.5" r="8" stroke="#F469A9" />
+          </g>
+          <g style="mix-blend-mode:darken">
+            <circle cx="18.5" cy="17.5" r="8" stroke="#F469A9" />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="hamburger-wrapper">
+      <div class="hamburger-menu"></div>
+    </div>
+    <!-- <ul>
         <li>
           <a href="#about" class="link-hover nav-link" id="about-link">About</a>
         </li>
@@ -41,459 +52,419 @@
         <li>
           <a href="/Resume_Ethan_Daniel.pdf" id="link-resume">Resume</a>
         </li>
-      </ul>
-    </nav>
-    <main>
-      <section class="section-landing">
-        <h6>Hi, I'm</h6>
-        <h1>Ethan Daniel<span>.</span></h1>
-        <div class="media-btns">
-          <a href="mailto:ethandaniel@berkeley.edu"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="65"
-              height="65"
-              viewBox="0 0 24 24"
-              class="media-svg"
-            >
-              <path
-                d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
-              /></svg
-          ></a>
-          <a href="https://www.facebook.com/ethancdaniel"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="65"
-              height="65"
-              viewBox="0 0 24 24"
-              class="media-svg"
-            >
-              <path
-                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-              /></svg
-          ></a>
-          <a href="https://www.linkedin.com/in/ethancdaniel/"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="65"
-              height="65"
-              viewBox="0 0 24 24"
-              class="media-svg"
-            >
-              <path
-                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
-              /></svg
-          ></a>
-          <a href="http://github.com/ethancdaniel"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="65"
-              height="65"
-              viewBox="0 0 24 24"
-              class="media-svg"
-            >
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-              /></svg
-          ></a>
-        </div>
-      </section>
+      </ul> -->
+  </nav>
+  <main>
+    <section class="section-landing">
+      <div class="vector-container">
 
-      <section class="section-about">
-        <h2>About</h2>
-        <div class="about-profile">
-          <p id="profile-paragraph">
-            Hello! I'm Ethan, a Healdsburg native, and a sophomore studying
-            Computer Science at
-            <a href="https://www.berkeley.edu/" class="link-hover"
-              >University of California, Berkeley.</a
-            >
-            Last year, I interned at
-            <a href="http://vytality.co/" class="link-hover">Vytality Health</a>
-            on the Android and iOS development teams. In the summer, I also
-            interned at SMount Tech on the Android team. <br /><br />
-            I'm currently most comfortable with mobile app development
-            (iOS/Android) and back-end web development and am looking to expand
-            on my skillset through side projects, classes, and internships.
-          </p>
-          <img
-            src="img/profile.jpg"
-            alt="profile picture"
-            id="profile-picture"
-          />
-        </div>
-      </section>
+        <h1>Hi, I'm Ethan.</h1>
+        <svg viewBox="0 0 137 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="landing-circles">
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 4.02989 3.89828)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 3.95908 17.7492)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 18.2567 17.8223)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 32.5545 17.8955)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 46.8522 17.9687)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 61.15 18.042)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 18.3277 3.9714)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 32.6256 4.04464)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 46.9232 4.11788)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 61.2208 4.191)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 75.5187 4.26412)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 75.4479 18.1151)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 89.7457 18.1883)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 104.043 18.2616)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 118.341 18.3348)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 132.639 18.4079)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 89.8165 4.33736)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 104.114 4.41048)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 118.412 4.48373)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 132.71 4.55697)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 3.88804 31.6002)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 3.81724 45.4511)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 18.1151 45.5243)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 32.4127 45.5975)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 46.7105 45.6707)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 61.0084 45.7439)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 18.1859 31.6733)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 32.4837 31.7465)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 46.7816 31.8197)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 61.079 31.8929)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 75.3768 31.9661)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 75.306 45.8171)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 89.6039 45.8902)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 103.901 45.9635)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 118.199 46.0366)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 132.497 46.1098)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 89.6747 32.0393)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 103.973 32.1125)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 118.27 32.1856)"
+            fill="#88BEF5" />
+          <circle r="3.79789" transform="matrix(-0.999987 -0.00511849 -0.00511849 0.999987 132.568 32.2589)"
+            fill="#88BEF5" />
+        </svg>
+        <svg viewBox="0 0 93 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="landing-triangle">
+          <path d="M41.1872 4.81719L84.191 53.7127L13.6596 61.4297L41.1872 4.81719Z" fill="#EE67A5" />
+          <rect width="4.90505" height="58.0309" transform="matrix(0.994068 -0.108763 0.14513 0.989413 13.4233 8.22717)"
+            fill="#F1F1F1" />
+          <rect width="4.90505" height="58.0309" transform="matrix(0.994068 -0.108763 0.14513 0.989413 22.3596 7.84131)"
+            fill="#F1F1F1" />
+          <rect width="4.90505" height="58.0309" transform="matrix(0.994068 -0.108763 0.14513 0.989413 32.1895 7.45544)"
+            fill="#F1F1F1" />
+          <rect width="4.90505" height="62.3414" transform="matrix(0.994068 -0.108763 0.14513 0.989413 40.5 2.80457)"
+            fill="#F1F1F1" />
+          <rect width="4.90505" height="58.0309" transform="matrix(0.994068 -0.108763 0.14513 0.989413 50.0618 6.68359)"
+            fill="#F1F1F1" />
+          <rect width="4.90505" height="58.0309" transform="matrix(0.994068 -0.108763 0.14513 0.989413 59.8916 6.68359)"
+            fill="#F1F1F1" />
+        </svg>
+        <svg viewBox="0 0 113 118" fill="none" xmlns="http://www.w3.org/2000/svg" class="landing-decagon">
+          <path
+            d="M28.958 14.0057L60.5943 6.44178L90.6346 18.9178L107.604 46.6684L105.022 79.0937L83.8736 103.808L52.2372 111.372L22.1969 98.8963L5.22709 71.1457L7.80957 38.7204L28.958 14.0057Z"
+            stroke="#E4EA88" stroke-width="4" />
+        </svg>
 
-      <section class="section-experience">
-        <h2>Experience</h2>
-        <div class="tabs-container">
-          <ul class="tabs-list">
-            <li>
-              <button
-                class="work-btn work-btn-selected"
-                id="work-experience-0"
-                tabindex="0"
-              >
-                SMount Tech
-              </button>
-            </li>
-            <li>
-              <button class="work-btn" id="work-experience-1" tabindex="1">
-                Vytality Health
-              </button>
-            </li>
-            <li>
-              <button class="work-btn" id="work-experience-2" tabindex="2">
-                The Third Workshop
-              </button>
-            </li>
-            <li>
-              <button class="work-btn" id="work-experience-3" tabindex="3">
-                City of Healdsburg
-              </button>
-            </li>
-          </ul>
-          <div class="indicator"></div>
-          <div id="indicator-background"></div>
-        </div>
+      </div>
+      <p>I'm a sophomore at UC Berkeley seeking summer 2020 internship opportunities.</p>
+      <div class="media-btns">
+        <a href="mailto:ethandaniel@berkeley.edu"><svg width="20" height="20" viewBox="0 0 35 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 4.375V30.625H35V4.375H0ZM31.3804 7.29167L17.5 18.5398L3.61958 7.29167H31.3804ZM2.91667 27.7083V10.4752L17.5 22.2935L32.0833 10.4752V27.7083H2.91667Z"
+              fill="black" />
+          </svg>
 
-        <div class="work-description" tabindex="0">
+        </a>
+        <a href="https://www.facebook.com/ethancdaniel"><svg width="20" height="20" viewBox="0 0 35 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.5 0C7.83708 0 0 7.83563 0 17.5C0 25.2321 5.01375 31.7917 11.9685 34.106C12.8421 34.2679 13.125 33.7254 13.125 33.2646V30.0067C8.25708 31.0654 7.24354 27.9417 7.24354 27.9417C6.44729 25.919 5.29958 25.3808 5.29958 25.3808C3.71146 24.2944 5.42063 24.3177 5.42063 24.3177C7.17792 24.4402 8.1025 26.1217 8.1025 26.1217C9.66292 28.7963 12.196 28.0233 13.195 27.5756C13.351 26.4454 13.8046 25.6725 14.3063 25.2365C10.4198 24.7917 6.33354 23.291 6.33354 16.5871C6.33354 14.6752 7.0175 13.1148 8.13604 11.8898C7.95521 11.4479 7.35583 9.66729 8.30667 7.25813C8.30667 7.25813 9.77667 6.78854 13.1206 9.05188C14.5162 8.66396 16.0125 8.47 17.5 8.46271C18.9875 8.47 20.4852 8.66396 21.8838 9.05188C25.2248 6.78854 26.6919 7.25813 26.6919 7.25813C27.6442 9.66875 27.0448 11.4494 26.864 11.8898C27.9869 13.1148 28.665 14.6767 28.665 16.5871C28.665 23.3085 24.5715 24.7888 20.6748 25.2219C21.3019 25.7644 21.875 26.829 21.875 28.4623V33.2646C21.875 33.7298 22.155 34.2767 23.0431 34.1046C29.9921 31.7873 35 25.2292 35 17.5C35 7.83563 27.1644 0 17.5 0Z"
+              fill="black" />
+          </svg>
+        </a>
+        <a href="http://github.com/ethancdaniel"><svg width="20" height="20" viewBox="0 0 35 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M7.2625 5.10415C7.2625 7.1181 5.64375 8.74998 3.64583 8.74998C1.64792 8.74998 0.0291667 7.1181 0.0291667 5.10415C0.0291667 3.09165 1.64792 1.45831 3.64583 1.45831C5.64375 1.45831 7.2625 3.09165 7.2625 5.10415ZM7.29167 11.6666H0V35H7.29167V11.6666ZM18.9321 11.6666H11.6871V35H18.9335V22.7514C18.9335 15.941 27.7258 15.3839 27.7258 22.7514V35H35V20.2256C35 8.73394 21.9888 9.15248 18.9321 14.8094V11.6666Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="35" height="35" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+        </a>
+      </div>
+      <a href="#projects" class="btn" id="projects-btn">
+        See my work
+      </a>
+    </section>
+
+    <section class="section-about">
+      <h2>About Me</h2>
+      <div class="about-profile">
+        <p id="profile-paragraph">
+          Hello! I'm Ethan, a Healdsburg native, and a sophomore studying
+          Computer Science at
+          <a href="https://www.berkeley.edu/" class="link-hover">University of California, Berkeley</a>.
+          Last year, I interned at
+          <a href="http://vytality.co/" class="link-hover">Vytality Health</a>
+          on the Android and iOS development teams. In the summer, I also
+          interned at SMount Tech on the Android team. <br /><br />
+          I'm currently most comfortable with mobile app development
+          (iOS/Android) and back-end web development and am looking to expand
+          on my skillset through side projects, classes, and internships.
+        </p>
+        <img src="img/profile.jpg" alt="profile picture" id="profile-picture" />
+      </div>
+    </section>
+
+    <section class="section-experience">
+      <h2>Experience</h2>
+      <div class="description-container">
+
+        <div class="work-description">
           <h3>Android Developer @ SMount Tech</h3>
           <h5>Jun 2019 - Sep 2019</h5>
           <ul>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
                 <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
               </svg>
               Worked on the Android development team to create a functional app
               prototype
             </li>
             <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
                 <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
+                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
               </svg>
               Utilized RabbitMQ to send messages to other users on a
               peer-to-peer network
             </li>
           </ul>
         </div>
-        <div class="work-description" tabindex="1">
-          <h3>
-            Software Engineering Intern @
-            <a href="https://vytality.co/" class="link-hover"
-              >Vytality Health</a
-            >
-          </h3>
-          <h5>Dec 2018 - Sep 2019</h5>
-          <ul>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
-                <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
-              </svg>
-              Developed iOS and Android Versions of an app for a Y Combinator
-              startup
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
-                <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
-              </svg>
-              Rapidly prototyped different iterations of the app using Agile
-              development
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
-                <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
-              </svg>
-              Implemented core functionality for an Instagram-like social feed
-            </li>
-          </ul>
-        </div>
-        <div class="work-description" tabindex="2">
-          <h3>
-            Programming Mentor @
-            <a href="thirdworkshop.com" class="link-hover"
-              >The Third Workshop</a
-            >
-          </h3>
-          <h5>Dec 2018 - Sep 2019</h5>
-          <ul>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
-                <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
-              </svg>
-              Mentored children of all ages in programming
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
-                <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
-              </svg>
-              Taught students the fundamentals of programming using tools such
-              as Snap and Codecademy
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
-                <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
-              </svg>
-              Provided IT services such as building PCs
-            </li>
-          </ul>
-        </div>
-        <div class="work-description" tabindex="3">
-          <h3>
-            Coding Camp Instructor @
-            <a href="https://www.ci.healdsburg.ca.us/" class="link-hover"
-              >City of Healdsburg</a
-            >
-          </h3>
-          <h5>Dec 2018 - Sep 2019</h5>
-          <ul>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
-                <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
-              </svg>
-              Created a curriculum to teach students the basics of Java in a
-              week-long course
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15px"
-                height="15px"
-                viewBox="0 0 407.436 407.436"
-              >
-                <polygon
-                  points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 "
-                />
-              </svg>
-              Provided additional resources for students to further their
-              programming skills after the coding camp
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
+      <div class="work-description">
+        <h3>
+          Software Engineering Intern @
+          <a href="https://vytality.co/" class="link-hover">Vytality Health</a>
+        </h3>
+        <h5>Dec 2018 - Sep 2019</h5>
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
+              <polygon
+                points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
+            </svg>
+            Developed iOS and Android Versions of an app for a Y Combinator
+            startup
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
+              <polygon
+                points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
+            </svg>
+            Rapidly prototyped different iterations of the app using Agile
+            development
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
+              <polygon
+                points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
+            </svg>
+            Implemented core functionality for an Instagram-like social feed
+          </li>
+        </ul>
+      </div>
 
-      <section class="section-projects">
-        <h2>Projects</h2>
-        <div id="projects-wrapper">
-          <div class="card">
-            <div class="project-link-award">
-              <a href="https://github.com/Kyle1668/treehacks2019"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                  /></svg
-              ></a>
-              <p class="project-award">
-                "Best Use of Docker" Finalist, Presented at DockerCon 2019.
-              </p>
-            </div>
-            <h3>NetGuard</h3>
-            <p>
-              IoT security tool used to protect against DDoS attacks by closing
-              all physical ports, uploading attack information to an Azure
-              database, and sending a private SSH key to the device owner to
-              reconfigure the device.
-            </p>
-            <ul>
-              <li>Python</li>
-              <li>SQL</li>
-              <li>Docker</li>
-              <li>Azure</li>
-            </ul>
-          </div>
-          <div class="card">
-            <div class="project-link-award">
-              <a href="https://github.com/ethancdaniel/Drip"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="50"
-                  height="50"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                  /></svg
-              ></a>
-              <p class="project-award">
-                Congressional App Challenge Finalist 2016
-              </p>
-            </div>
-            <h3>Drip</h3>
-            <p>
-              Reservoir tracker for California. Scrapes reservoir level data
-              from the
-              <a href="https://cdec.water.ca.gov/" class="link-hover">CDEC</a>
-              and graphs reservoir levels over a selected time period.
-            </p>
-            <ul>
-              <li>Android</li>
-              <li>Java</li>
-              <li>XML</li>
-            </ul>
-          </div>
-          <div class="card">
-            <a href="https://github.com/ethancdaniel/TheHoundsBark"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                /></svg
-            ></a>
-            <h3>The Hound's Bark</h3>
-            <p>
-              News publishing website for the Healdsburg High School journalism
-              class. Uses date and submitted information to categorize articles
-              in the database and generate unique URLs for each article. Not
-              currently in use.
-            </p>
-            <ul>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>SQL</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-          <div class="card">
-            <a href="https://github.com/ethancdaniel/SCBC_App"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                /></svg
-            ></a>
-            <h3>Sonoma County Bike Coalition</h3>
-            <p>
-              Android app that scrapes and displays news articles from the
-              <a href="https://www.bikesonoma.org/" class="link-hover"
-                >SCBC website</a
-              >. Feature to display map markers for cycling-related points of
-              interest in progress.
-            </p>
-            <ul>
-              <li>Android</li>
-              <li>Java</li>
-              <li>XML</li>
-              <li>Python</li>
-              <li>Flask</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </div>
-          <div class="card">
-            <a href="https://github.com/ethancdaniel/WorkoutGenerator"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                /></svg
-            ></a>
-            <h3>Workout Generator</h3>
-            <p>
-              Project for my iOS DeCal class at UC Berkeley to randomly generate
-              workouts based on user-selected muscle groups.
-            </p>
-            <ul>
-              <li>iOS</li>
-              <li>Swift</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <div class="work-description" tabindex="2">
+        <h3>
+          Programming Mentor @
+          <a href="thirdworkshop.com" class="link-hover">The Third Workshop</a>
+        </h3>
+        <h5>Dec 2018 - Sep 2019</h5>
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
+              <polygon
+                points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
+            </svg>
+            Mentored children of all ages in programming
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
+              <polygon
+                points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
+            </svg>
+            Taught students the fundamentals of programming using tools such
+            as Snap and Codecademy
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
+              <polygon
+                points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
+            </svg>
+            Provided IT services such as building PCs
+          </li>
+        </ul>
+      </div>
+      <div class="work-description" tabindex="3">
+        <h3>
+          Coding Camp Instructor @
+          <a href="https://www.ci.healdsburg.ca.us/" class="link-hover">City of Healdsburg</a>
+        </h3>
+        <h5>Dec 2018 - Sep 2019</h5>
+        <ul>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
+              <polygon
+                points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
+            </svg>
+            Created a curriculum to teach students the basics of Java in a
+            week-long course
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 407.436 407.436">
+              <polygon
+                points="112.814,0 91.566,21.178 273.512,203.718 91.566,386.258 112.814,407.436 315.869,203.718 " />
+            </svg>
+            Provided additional resources for students to further their
+            programming skills after the coding camp
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="section-contact">
-        <h2>Contact</h2>
-        <p id="contact-paragraph">
-          I'm currently looking for summer 2020 internship opportunities.
-          Whether you'd like to work on a project together or contact me about a
-          professional opportunity, I will do my best to answer your email!
-        </p>
-        <a href="mailto:ethandaniel@berkeley.edu" id="link-contact"
-          >Get In Touch</a
-        >
-      </section>
-    </main>
-    <script src="main.js"></script>
-  </body>
+    <section class="section-projects">
+      <h2>Projects</h2>
+      <div id="projects-wrapper">
+        <div class="card">
+          <div class="project-link-award">
+            <a href="https://github.com/Kyle1668/treehacks2019"><svg class="project-github"
+                xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg></a>
+            <p class="project-award">
+              "Best Use of Docker" Finalist, Presented at DockerCon 2019.
+            </p>
+          </div>
+          <h3>NetGuard</h3>
+          <p>
+            IoT security tool used to protect against DDoS attacks by closing
+            all physical ports, uploading attack information to an Azure
+            database, and sending a private SSH key to the device owner to
+            reconfigure the device.
+          </p>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Docker</li>
+            <li>Azure</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="project-link-award">
+            <a href="https://github.com/ethancdaniel/Drip"><svg class="project-github"
+                xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg></a>
+            <p class="project-award">
+              Congressional App Challenge Finalist 2016
+            </p>
+          </div>
+          <h3>Drip</h3>
+          <p>
+            Reservoir tracker for California. Scrapes reservoir level data
+            from the
+            <a href="https://cdec.water.ca.gov/" class="link-hover">CDEC</a>
+            and graphs reservoir levels over a selected time period.
+          </p>
+          <ul>
+            <li>Android</li>
+            <li>Java</li>
+            <li>XML</li>
+          </ul>
+        </div>
+        <div class="card">
+          <a href="https://github.com/ethancdaniel/TheHoundsBark"><svg class="project-github"
+              xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg></a>
+          <h3>The Hound's Bark</h3>
+          <p>
+            News publishing website for the Healdsburg High School journalism
+            class. Uses date and submitted information to categorize articles
+            in the database and generate unique URLs for each article. Not
+            currently in use.
+          </p>
+          <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="card">
+          <a href="https://github.com/ethancdaniel/SCBC_App"><svg class="project-github"
+              xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg></a>
+          <h3>Sonoma County Bike Coalition</h3>
+          <p>
+            Android app that scrapes and displays news articles from the
+            <a href="https://www.bikesonoma.org/" class="link-hover">SCBC website</a>. Feature to display map markers
+            for cycling-related points of
+            interest in progress.
+          </p>
+          <ul>
+            <li>Android</li>
+            <li>Java</li>
+            <li>XML</li>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="card">
+          <a href="https://github.com/ethancdaniel/WorkoutGenerator"><svg class="project-github"
+              xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg></a>
+          <h3>Workout Generator</h3>
+          <p>
+            Project for my iOS DeCal class at UC Berkeley to randomly generate
+            workouts based on user-selected muscle groups.
+          </p>
+          <ul>
+            <li>iOS</li>
+            <li>Swift</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact">
+      <h2>Contact</h2>
+      <p id="contact-paragraph">
+        I'm currently looking for summer 2020 internship opportunities.
+        Whether you'd like to work on a project together or contact me about a
+        professional opportunity, I will do my best to answer your email!
+      </p>
+      <a href="mailto:ethandaniel@berkeley.edu" class="btn" id="link-contact">Get in touch</a>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+
 </html>
