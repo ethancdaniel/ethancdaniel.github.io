@@ -68,8 +68,14 @@ nav {
   margin-top: 12px;
 }
 
-.work-description > h3 > a {
+.work-description a, .card a {
   color: #F2CC8F;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) initial;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) initial;
+}
+
+.work-description a:hover, .card a:hover {
+  color: white;
 }
 
 .card, .work-description {
@@ -257,8 +263,8 @@ nav {
 
 .media-btns a {
   color: black;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) initial;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) initial;
 }
 
 .media-btns a:hover {

@@ -68,8 +68,12 @@ nav {
   margin-top: 12px;
 }
 
-.work-description > h3 > a {
+.work-description a, .card a {
   color: map-get($map: $colors, $key: 'work-links');
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) initial;
+  &:hover{
+    color: white;
+  }
 }
 
 .card, .work-description {
@@ -240,7 +244,7 @@ nav {
 }
 .media-btns a {
   color: black;
-  transition: all 0.3s ease;//all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) initial;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) initial;
 
   &:hover {
     color: map-get($map: $colors, $key: 'secondary');
