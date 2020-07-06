@@ -51,9 +51,14 @@ h5 {
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px 10px;
+  margin: 20px 0px 20px 0px;
 }
 
+.project-link-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .project-github {
   fill: white;
 }
@@ -71,6 +76,15 @@ nav {
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.18);
   color: white;
   border-radius: 5px;
+}
+
+.card > h3 {
+  font-size: 1.4em;
+  margin: 10px 0px 10px 0px;
+}
+
+.card > p {
+  margin-bottom: 16px;
 }
 
 .section-landing p {
@@ -145,8 +159,19 @@ nav {
   border-width: 2px;
 }
 
-ul li {
-  list-style: none;
+.card > ul {
+  margin-top: 30px;
+  font-size: 0.8em;
+  display: flex;
+  
+}
+.card > ul li {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.custom-bullet {
+  fill: white;
 }
 
 #one {
@@ -208,6 +233,19 @@ ul li {
   justify-content: space-between;
   width: 85px;
   margin-top: 20px;
+
+  & svg {
+    fill: black;
+  }
+}
+.media-btns a {
+  color: black;
+  transition: all 0.3s ease;//all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) initial;
+
+  &:hover {
+    color: map-get($map: $colors, $key: 'secondary');
+    pointer-events: all;
+  }
 }
 section:not(:first-child) {
   margin-top: 100px;
@@ -258,20 +296,12 @@ section:not(:first-child) {
   color: white;
 }
 
-.section-contact {
-  margin-bottom: 50px;
+.work-description > ul {
+  list-style-type: none;
 }
 
-.work-description::after {
-  right: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-width: 10px;
-  top: 70px;
+.section-contact {
+  margin-bottom: 50px;
 }
 
 .btn {
