@@ -317,6 +317,11 @@ section:not(:first-child) {
   padding: 8px 16px 8px 16px;
   font-size: 0.8em;
   margin-top: 15px;
+  background: map-get($map: $colors, $key: 'secondary');
+  &:hover {
+    color:white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  }
 }
 
 #logo {
@@ -336,11 +341,6 @@ section:not(:first-child) {
     margin: 10px auto;
     display: block;
     border-radius: 300px;
-}
-
-#projects-btn {
-  color: white;
-  background: map-get($map: $colors, $key: 'secondary');
 }
 
 @media screen and (min-width: 900px) {
